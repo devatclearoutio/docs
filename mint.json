@@ -1,84 +1,93 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Clearout Starter Kit",
+  "name": "Clearout knowledge base | Help Center",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "favicon.png",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#ff9e30",
+    "light": "#ffa700",
+    "dark": "#334a4a",
+    "background": {
+      "dark": "#ff9e30"
+    },
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#ff9e30",
+      "to": "#ff9e30"
     }
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true,
+    "thumbsRating": true
+  },
+  "search": {
+    "prompt": "✨ Start typing, and voila!"
+  },
+  "metadata": {
+    "og:image": "https://github.com/mage-ai/mage-ai/blob/master/docs/og.png?raw=True",
+    "og:description": "Mage is an open-source, hybrid framework for transforming and integrating data. Our docs are the best place to learn about making magical data pipelines.",
+    "og:site_name": "Mage Docs",
+    "twitter:site": "@mage_ai"
+  },
+  "background": {
+    "style": "gradient"
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "url": "mailto:us@clearout.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.clearout.io/dashboard"
   },
   "primaryTab": {
-    "name": "Docs"
+    "name": "Get Started"
   },
   "tabs": [
     {
-      "name": "API Reference",
+      "name": "Guides",
+      "url": "guides"
+    },
+    {
+      "name": "API",
       "url": "api-reference",
-      "openapi": "/api-reference/Clearout-OpenAPI-Spec-V3.yaml",
-      "icon": "square-terminal"
+      "openapi": "/api-reference/Clearout-OpenAPI-Spec-V3.yaml"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation222",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
+      "name": "What's new",
+      "icon": "megaphone",
+      "url": "https://changelog.clearout.io/"
     },
     {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
+      "name": "Roadmap",
+      "icon": "map",
+      "url": "https://calendly.com/clearout/connect-to-live-support"
     },
     {
       "name": "Blog",
       "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
+      "url": "https://clearout.io/blog"
     }
   ],
   "navigation": [
     {
-      "group": "Get Startedsdss",
+      "group": "Overview",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development",
-        {
-          "group": "Abstractions",
-          "icon": "object-subtract",
-          "pages": [
-            "design/core-abstractions",
-            "design/abstractions/project-structure"
-          ]
-        }
+        "get-started/explore-all-products"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "SET UP CLEAROUT",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "get-started/create-an-account",
+        "get-started/products-and-prices"
       ]
     },
     {
@@ -93,6 +102,13 @@
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",
         "api-reference/endpoint/delete"
+      ]
+    },
+    {
+      "group": "Get Started",
+      "icon": "object-subtract",
+      "pages": [
+        "guides/overview"
       ]
     }
   ],
