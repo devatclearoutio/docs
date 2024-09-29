@@ -25,6 +25,9 @@
     "name": "Dashboard",
     "url": "https://dashboard.mintlify.com"
   },
+  "primaryTab": {
+    "name": "Docs"
+  },
   "tabs": [
     {
       "name": "API Reference",
@@ -58,7 +61,15 @@
       "pages": [
         "introduction",
         "quickstart",
-        "development"
+        "development",
+        {
+          "group": "Abstractions",
+          "icon": "object-subtract",
+          "pages": [
+            "design/core-abstractions",
+            "design/abstractions/project-structure"
+          ]
+        }
       ]
     },
     {
