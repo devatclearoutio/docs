@@ -464,7 +464,6 @@ components:
           properties:
             url:
               type: string
-              example: https://clearout.s3.ap-south-1.amazonaws.com/5c6810bb82e2fc4ab21ce233/5c681d56cc56176d10d78f31/results/test3_clearout_results.csv
     BulkVerifyResultDownloadFailureResponseType:
       type: object
       properties:
@@ -1704,7 +1703,6 @@ components:
           properties:
             url:
               type: string
-              example: https://s3.ap-south-1.amazonaws.com/clearout.others/60f76977473718917ebc6edb/61009e745c6d3469958ace11/results/test3_appended_clearout_finder_results.csv
     BulkFinderResultDownloadFailureResponseType:
       type: object
       properties:
