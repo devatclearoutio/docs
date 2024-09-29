@@ -464,7 +464,7 @@ components:
           properties:
             url:
               type: string
-              example: https://clearout.s3.ap-south-1.amazonaws.com/5c6810bb82e2fc4ab21ce233/5c681d56cc56176d10d78f31/results/test3_clearout_results.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz=AKIAJXBOVX5Q2EULDUIA%2F20190218%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20190218T050528Z&X-Amz-Expires=300&X-Amz-Sig
+              example: https://clearout.s3.ap-south-1.amazonaws.com/5c6810bb82e2fc4ab21ce233/5c681d56cc56176d10d78f31/results/test3_clearout_results.csv
     BulkVerifyResultDownloadFailureResponseType:
       type: object
       properties:
@@ -1704,7 +1704,7 @@ components:
           properties:
             url:
               type: string
-              example: https://s3.ap-south-1.amazonaws.com/clearout.others/60f76977473718917ebc6edb/61009e745c6d3469958ace11/results/test3_appended_clearout_finder_results.csv?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz=AKIAJXBOVX5Q2EULDUIA%2F20210728%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Date=20210728T000244Z&X-Amz-Expires=300&X-Amz-Signature=e1e1c6340428d23d9aa37e57229f28025ae5f7510e27e102eb8eae901a0919c8&X-Amz-SignedHeaders=host
+              example: https://s3.ap-south-1.amazonaws.com/clearout.others/60f76977473718917ebc6edb/61009e745c6d3469958ace11/results/test3_appended_clearout_finder_results.csv
     BulkFinderResultDownloadFailureResponseType:
       type: object
       properties:
