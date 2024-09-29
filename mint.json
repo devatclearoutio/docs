@@ -31,11 +31,9 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference"
-    },
-    {
-      "name": "API Reference2",
-      "url": "api-reference2"
+      "url": "api-reference",
+      "openapi": "/api-reference/Clearout-OpenAPI-Spec-V3.yaml",
+      "icon": "square-terminal"
     }
   ],
   "anchors": [
