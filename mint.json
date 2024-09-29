@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "Clearout Starter Kit",
   "logo": {
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
@@ -29,11 +29,15 @@
     {
       "name": "API Reference",
       "url": "api-reference"
+    },
+    {
+      "name": "API Reference2",
+      "url": "api-reference2"
     }
   ],
   "anchors": [
     {
-      "name": "Documentation",
+      "name": "Documentation222",
       "icon": "book-open-cover",
       "url": "https://mintlify.com/docs"
     },
@@ -50,7 +54,7 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "Get Startedsdss",
       "pages": [
         "introduction",
         "quickstart",
