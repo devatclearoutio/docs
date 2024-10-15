@@ -1,0 +1,73 @@
+---
+title: "Chatbots"
+icon: "fly"
+sidebarTitle: "Chatbots"
+description: "Mage guides for getting started, building pipelines, and more."
+---
+
+# Why Do You Need Email Verification on HubSpot Chatflows?
+
+HubSpot Chatflows is a highly popular and powerful tool for lead generation, but its capabilities can be further enhanced by integrating with **Clearout Email Verifier**. Through this integration, Clearout's advanced features can greatly improve the effectiveness of the HubSpot Chatbot, taking lead quality to a whole new level.
+
+Without email verification, chatbots are susceptible to frequent email typos and users providing fake, temporary, & invalid email addresses. This leads to a buildup of incorrect and unreliable contacts, wasting valuable company resources and potentially losing out on valuable leads and their trust.
+
+By integrating Clearout's real-time email verification into HubSpot's chatbot, email addresses can be validated at the point of capture. This integration acts as a safeguard, identifying incorrect or invalid email addresses and preventing them from being added to your contact lists. By implementing this solution, businesses can ensure that all collected email addresses are accurate and valid, improving the overall quality of their leads.
+
+:::info
+**Note:** This solution is available for HubSpot Chatbots only.
+:::
+
+## Witness the Power of Clearout's Email Verifier Integrated with HubSpot Chatflows!
+
+### Clearout Integrates with HubSpot Chatflows to Help Generate High-Quality Leads
+
+### Integrate Clearout in HubSpot Chatflows to Remove Invalid Leads at Point of Capture
+
+Navigate your way to the type of bot you use:
+- **HubSpot Login --> Conversations --> Chatflows --> Create Chatflow --> Website --> Select any Bot.**  
+  The steps below are for the 'Qualify leads bot':
+
+1. Once 'Qualify leads bot' is selected, click **Next** to reach the **Build** section to edit the Action Boxes.
+2. Scroll down to the Action box named **Get Email** and click on the **+** icon below it to create a new action for email verification.
+3. A new Action window will open. Scroll down to **Run a code snippet**, give an Action name, and delete the existing code.
+4. Now, Copy and Paste this code:
+
+```js
+// Import the "request" module.
+var request = require("request");
+// Define the main function that will be exported.
+exports.main = (event, callback) => {
+  var options = {
+    method: 'POST',
+    url: 'https://api.clearout.io/v2/email_verify/instant',
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': 'REPLACE_WITH_YOUR_CLEAROUT_SERVER_APP_TOKEN',   // Add authorization token (API key).
+    },
+    body: {
+      email: event.session.parsedResponses.Get_Email.parsedResponse, // Get the email address from the event object.
+      timeout: 30000 //The option to define the maximum time that can be used for verifying the status of the given email address.
+    },
+    json: true
+  };
+  request(options, function (err, response, body) {
+    if (err) throw new Error(err); // Handle errors.
+    // initialize default value 
+    let nextModuleNickname = 'send_to_team_member';  // The next module your bot will go to.
+    let botMessage = ''; // The message your bot will return.
+    let responseExpected = false; // Whether or not this code snippet should be executed again with the next user input.
+    
+    // check if the entered email is safe to send. If not, ask the user to re-enter the email.
+    if (body.data.safe_to_send === 'no') {
+      nextModuleNickname = 'Get_Email';
+      botMessage = `${body.data.email_address} is not a valid email address.`;
+    }
+    // set the response.
+    const responseJson = {
+      botMessage,  
+      nextModuleNickname,
+      responseExpected
+    };
+    callback(responseJson);
+  });
+};

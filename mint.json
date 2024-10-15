@@ -11,11 +11,17 @@
     "light": "#ffa700",
     "dark": "#334a4a",
     "background": {
-      "dark": "#ff9e30"
+      "dark": "#1c1c1c",
+      "light": "#ffffff"
     },
     "anchors": {
       "from": "#ff9e30",
       "to": "#ff9e30"
+    }
+  },
+  "analytics": {
+    "gtm": {
+      "tagId": "GTM-PR735ZD"
     }
   },
   "feedback": {
@@ -46,7 +52,7 @@
     "url": "https://app.clearout.io/dashboard"
   },
   "primaryTab": {
-    "name": "Get Started"
+    "name": "Documentation"
   },
   "tabs": [
     {
@@ -54,9 +60,17 @@
       "url": "guides"
     },
     {
-      "name": "API",
+      "name": "References",
       "url": "api-reference",
       "openapi": "/api-reference/Clearout-OpenAPI-Spec-V3.yaml"
+    },
+    {
+      "name": "Integrations",
+      "url": "integrations"
+    },
+    {
+      "name": "Troubleshooting",
+      "url": "troubleshooting"
     }
   ],
   "anchors": [
@@ -78,9 +92,12 @@
   ],
   "navigation": [
     {
-      "group": "Overview",
+      "group": "Introduction",
       "pages": [
-        "get-started/explore-all-products"
+        "documentation/welcome",
+        "documentation/quick-start",
+        "documentation/products",
+        "documentation/use-case"
       ]
     },
     {
@@ -92,16 +109,141 @@
     },
     {
       "group": "API Documentation",
-      "pages": [
-        "api-reference/introduction"
-      ]
+      "pages": ["api-reference/introduction"]
+    },
+    {
+      "group": "UI References",
+      "pages": ["components/reference-ui"]
     },
     {
       "group": "Get Started",
+      "pages": [
+        {
+          "group": "Create a Free Accounts",
+          "pages": [
+            "guides/create-a-free-account/benefits-and-why",
+            "guides/create-a-free-account/explore-feature-with-free-credits",
+            "guides/create-a-free-account/short-vid-on-how",
+            "guides/create-a-free-account/steps-by-step-instructions",
+            "guides/create-a-free-account/tips-for-best-use-these-free-credits"
+          ]
+        },
+        {
+          "group": "Account Setup",
+          "pages": [
+            "guides/account-setup/system-requirements",
+            "guides/account-setup/quick-setup-guide",
+            "guides/account-setup/get-familiar-with-dashboard",
+            "guides/account-setup/how-to-import-and-export-diff-file-form",
+            "guides/account-setup/profile-and-notification-customizations",
+            "guides/account-setup/team-collaboration-overview",
+             "guides/account-setup/integration-overview"
+          ]
+        }
+      ]
+    },
+    
+    {
+      "group": "Email Verifier",
+      "icon": "object-subtract",
+      "pages": ["guides/quick-validation", "guides/bulk-validation"]
+    },
+    {
+      "group": "Email Finder",
+      "icon": "object-subtract",
+      "pages": ["guides/#", "guides/#"]
+    },
+    {
+      "group": "Prospecting",
+      "icon": "object-subtract",
+      "pages": ["guides/#", "guides/#"]
+    },
+    {
+      "group": "Reverse Lookup",
+      "icon": "object-subtract",
+      "pages": ["guides/#", "guides/#"]
+    },
+    {
+      "group": "Apps",
+      "icon": "object-subtract",
+      "pages": ["guides/#", "guides/#"]
+    },
+    
+    {
+      "group": "Tools",
       "icon": "object-subtract",
       "pages": [
-        "guides/overview"
+        "guides/chrome-extension",
+        "guides/google-sheets-add-ons",
+        "guides/wordpress-plugin"
       ]
+    },
+    {
+      "group": "Integrations",
+      "icon": "object-subtract",
+      "pages": [
+        "integrations/overview",
+        "integrations/hubspot",
+        "integrations/apollo",
+        "integrations/forms",
+        "integrations/chatbots",
+        "integrations/wordpress",
+        "integrations/google-sheets",
+        "integrations/zapier",
+        "integrations/make",
+        "integrations/pabbly",
+        "integrations/integrately",
+        "integrations/esp",
+        "integrations/crm",
+        "integrations/upcoming"
+      ]
+    },
+    {
+      "group": "Be an Integration partner",
+      "icon": "object-subtract",
+      "pages": ["integrations/#"]
+    },
+    {
+      "group": "Connect Support",
+      "icon": "object-subtract",
+      "pages": [
+        "troubleshooting/how-to-work-with-support",
+        "troubleshooting/clearout-slas"
+      ]
+    },
+    {
+      "group": "Featured Answered",
+      "icon": "object-subtract",
+      "pages": ["troubleshooting/#", "troubleshooting/#"]
+    },
+    {
+      "group": "Account Management",
+      "icon": "object-subtract",
+      "pages": [
+        "troubleshooting/not-able-to-signup",
+        "troubleshooting/reset-password",
+        "troubleshooting/transfer"
+      ]
+    },
+    {
+      "group": "Bulk activities",
+      "icon": "object-subtract",
+      "pages": ["troubleshooting/#"]
+    },
+    {
+      "group": "Javascript Widget",
+      "icon": "object-subtract",
+      "pages": ["troubleshooting/#"]
+    },
+    {
+      "group": "Data security",
+      "icon": "object-subtract",
+      "pages": ["troubleshooting/#"]
+    },
+    {
+      "group": "Best practices",
+      "icon": "object-subtract",
+      "pages": ["troubleshooting/#"]
     }
   ],
   "footerSocials": {

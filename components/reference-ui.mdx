@@ -1,0 +1,147 @@
+---
+title: "Reference UI Component"
+icon: "fly"
+sidebarTitle: "sample ui components"
+description: "sample ui components"
+private: true,
+---
+
+<style>@import '../styles/custom.css';</style>
+
+## Callout Boxes
+
+<Note>This adds a note in the content</Note>
+
+## Warning Callouts
+
+<Warning>This raises a warning to watch out for</Warning>
+
+## Tooltips
+
+<Tooltip tip="This is a tooltip!">Hover over me</Tooltip>
+
+## Yt Video Embedd
+
+<div align="center">
+  <iframe
+    src="https://www.youtube.com/embed/N5wIux7yJB0?si=EfvOyH37m_CZavre"
+    width="560"
+    height="315"
+    style={{ border: "none" }}
+  ></iframe>
+</div>
+
+
+
+## Image Embedd
+
+<div style={{ display: "flex", overflowX: "auto", padding: "10px 0" }}>
+  <img
+    src="/images/clearout.io.png"
+    alt="Extension Feature 1"
+    style={{
+      margin: "0 10px",
+      flex: "0 0 auto",
+      width: "600px",
+      height: "auto",
+    }}
+  />
+  <img
+    src="/images/clearout.io.png"
+    alt="Extension Feature 2"
+    style={{
+      margin: "0 10px",
+      flex: "0 0 auto",
+      width: "600px",
+      height: "auto",
+    }}
+  />
+  <img
+    src="/images/clearout.io.png"
+    alt="Extension Feature 3"
+    style={{
+      margin: "0 10px",
+      flex: "0 0 auto",
+      width: "600px",
+      height: "auto",
+    }}
+  />
+</div>
+
+## steps
+
+<Steps>
+  <Step title="First Step">
+    These are instructions or content that only pertain to the first step.
+  </Step>
+  <Step title="Second Step">
+    These are instructions or content that only pertain to the second step.
+  </Step>
+  <Step title="Third Step">
+    These are instructions or content that only pertain to the third step.
+  </Step>
+</Steps>
+
+## tabs view
+
+<Tabs>
+  <Tab title="First Tab">
+    ☝️ Welcome to the content that you can only see inside the first Tab.
+      <img src="https://mintlify-assets.b-cdn.net/bigbend.jpg" alt="Extension Feature 1" style={{ margin: '0 10px', flex: '0 0 auto', width: '600px', height: 'auto' }} />
+
+  </Tab>
+  <Tab title="Second Tab">
+    ✌️ Here's content that's only inside the second Tab.
+<iframe 
+  src="https://www.youtube.com/embed/N5wIux7yJB0?si=EfvOyH37m_CZavre" 
+  width="560" 
+  height="315" 
+  style={{ border: 'none' }} 
+></iframe>
+  </Tab>
+  <Tab title="Third Tab">
+    💪 Here's content that's only inside the third Tab.
+      <img src="https://mintlify-assets.b-cdn.net/bigbend.jpg" alt="Extension Feature 1" style={{ margin: '0 10px', flex: '0 0 auto', width: '600px', height: 'auto' }} />
+  </Tab>
+</Tabs>
+
+## card
+
+<CardGroup cols={2}>
+  <Card title="First Card" icon="square-1">
+    Neque porro quisquam est qui dolorem ipsum quia dolor sit amet
+  </Card>
+  <Card title="Second Card" icon="square-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </Card>
+  <Card title="Third Card" icon="square-3">
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  </Card>
+  <Card title="Fourth Card" icon="square-4">
+    Excepteur sint occaecat cupidatat non proident
+  </Card>
+</CardGroup>
+
+## FAQ Accordion
+
+<Accordion title="What is the Chrome Extension?">
+  The Clearout Chrome Extension allows you to verify and validate email
+  addresses directly in your browser.
+</Accordion>
+
+<Accordion title="How do I install the extension?">
+  You can install the extension from the Chrome Web Store by searching for
+  "Clearout" or <a href="https://chrome.google.com/webstore">clicking here</a>.
+</Accordion>
+
+<Accordion title="Is it free to use?">
+  The Chrome Extension is free to install, with in-app purchases available for
+  advanced features.
+</Accordion>
+
+## Contact Us
+
+<p className="stepone">
+  If you have any further questions about the extension, feel free to [contact
+  us](mailto:support@clearout.io).
+</p>
